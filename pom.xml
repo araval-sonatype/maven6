@@ -6,7 +6,7 @@
   <groupId>com.example.maven-project</groupId>
   <artifactId>maven-project</artifactId>
   <packaging>pom</packaging>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0-0</version>
   <name>Maven Project</name>
   <description>Sample Maven project with a working, deployable site.</description>
   <url>http://www.example.com</url>
@@ -22,11 +22,11 @@
   </modules>
 
   <distributionManagement>
-    <site>
+    <repository>
       <id>site-server</id>
       <name>Test Project Site</name>
-      <url>file:///tmp/maven-project-site</url>
-    </site>
+      <url>https://nxrm-araval.sonatypedev.com:444/repository/test-maven-hosted/</url>
+    </repository>
   </distributionManagement>
 
   <build>
