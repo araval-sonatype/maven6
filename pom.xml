@@ -16,19 +16,7 @@
     <project.reporting.outputEncoding>utf-8</project.reporting.outputEncoding>
   </properties>
          
-  <distributionManagement>
-    <repository>
-      <id>nexus</id>
-      <name>Releases</name>
-      <url>http://localhost:8081/repository/maven-releases</url>
-    </repository>
-    <snapshotRepository>
-      <id>nexus</id>
-      <name>Snapshot</name>
-      <url>http://localhost:8081/repository/maven-snapshots</url>
-    </snapshotRepository>
-  </distributionManagement>
-
+  
   <modules>
     <module>server</module>
     <module>webapp</module>
@@ -40,6 +28,16 @@
       <name>Test Project Site</name>
       <url>https://nxrm-araval.sonatypedev.com:444/repository/test-maven-hosted/</url>
     </repository>
+    <repository>
+      <id>nexus</id>
+      <name>Releases</name>
+      <url>http://localhost:8081/repository/maven-releases</url>
+    </repository>
+    <snapshotRepository>
+      <id>nexus</id>
+      <name>Snapshot</name>
+      <url>http://localhost:8081/repository/maven-snapshots</url>
+    </snapshotRepository>
   </distributionManagement>
 
   <build>
