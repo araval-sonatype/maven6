@@ -23,12 +23,7 @@
   </modules>
 
   <distributionManagement>
-    <repository>
-      <id>nxrm</id>
-      <name>Test Project Site</name>
-      <url>https://nxrm-araval.sonatypedev.com:444/repository/test-maven-hosted/</url>
-    </repository>
-           
+               
     <repository>
       <id>nexus</id>
       <name>Releases</name>
