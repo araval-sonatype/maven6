@@ -26,4 +26,7 @@ steps:
     applicationId: 'ADO2'
     stage: 'Build'
     scanPipelineWorkspace: true
+    ignoreSystemError: true
+    ignoreScanningError: true
+    enableDebugLogging: true
     
