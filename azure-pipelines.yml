@@ -20,13 +20,12 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
-- task: NexusIqPipelineTask@1
+- task: SonatypeIqPipelineTask@1
   inputs:
-    nexusIqService: 'NexusIQConnection'
-    applicationId: 'ADO2'
-    stage: 'Build'
-    scanPipelineWorkspace: true
-    ignoreSystemError: true
-    ignoreScanningError: true
-    enableDebugLogging: true
+    iqApplication: 'YourApplicationID'
+    iqStage: 'build'
+    iqScanTargets: '**/*.jar, **/*.json'
+    iqOwaspStageRelease: true
+    iqPolicyEvaluationEnabled: true
+    iqFailPipeline: true
     
