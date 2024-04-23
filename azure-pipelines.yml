@@ -25,4 +25,5 @@ steps:
     nexusIqService: 'NexusIQConnection'
     applicationId: 'ADO2'
     stage: 'Build'
+    scanPipelineWorkspace: true
     
