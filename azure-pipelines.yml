@@ -26,3 +26,4 @@ steps:
     nexusIqService: 'NexusIQConnection'
     applicationId: 'ADO2'
     stage: 'Build'
+    scanTargets: ‘**/*.war’
